@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="grid header__info-store">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-6 info-store__right">
+              <div class="info-right__phone">
+                <i class="right__phone-icon fas fa-phone-alt"></i>
+                <span class="phone__number">(239) 555-0108</span>
+              </div>
+              <div class="info-right__address">
+                <i class="right__address-icon fas fa-map-marker-alt"></i>
+                <span class="address__name">3891 Ranchview Dr. Richardson, California</span>
+              </div>
+            </div>
+
+            <div class="col l-6 info-store__left">
+              <div class="info-right__reviews">
+                <div class="reviews__star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="info-right__reviews">
+                <span class="reviews__text">33400 Five Star Service Reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid wide">
+        <div class="row header__navbar">
+
+          <ul class="navbar__list navbar__item-logo">
+            <li class="navbar__item navbar__item-logo">
+              <a class="navbar__item-link" href="">
+                <h2>cordes.</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="navbar__list navbar__item-gender">
+            <li class="navbar__item item-gender__men item-gender--active">
+              <a class="navbar__item-link" href="">
+                <span class="item-gender__men-text">Men</span>
+              </a>
+            </li>
+            <li class="navbar__item item-gender__women">
+              <a class="navbar__item-link" href="">
+                <span class="item-gender__men-text">Women</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="navbar__list navbar__item-search-bar">
+            <div class="search-bar__input">
+              <input type="text" placeholder="Search product">
+            </div>
+            <div class="search-bar__button">
+              <i class="search__icon fas fa-search"></i>
+              <a class="search__text">Search</a>
+            </div>
+          </div>
+
+          <ul class="navbar__list navbar__item-sign">
+            <li class="item-sign__profile">
+              <a class="navbar__item-link" href="">
+                <i class="item-sign-profile__icon far fa-user"></i>
+              </a>
+            </li>
+
+            <li class="item-sign__sign">
+              <div class="sign__in">
+                <a href="#" class="navbar__item-link">Login</a>
+              </div>
+              <span>&#8260;</span>
+              <div class="sign__up">
+                <a href="" class="navbar__item-link">Sign up</a>
+              </div>
+            </li>
+            <ul class="item-sign__account">
+              <li class="item-sign-account__name">
+                <a href="" class="navbar__item-link">Account</a>
+              </li>
+              <li class="item-sign__account-icon">
+                <a href="" class="navbar__item-link">
+                  <i class="fas fa-angle-down"></i>
+                </a>
+              </li>
+            </ul>
+          </ul>
+
+          <div class="navbar__list navbar__item-favourite">
+            <a href="">
+              <i class="favourite__icon far fa-heart"></i>
+            </a>
+            <a href="" class="navbar__item-link">
+              <span class="favourite__text">Wishlist</span>
+            </a>
+          </div>
+
+          <ul class="navbar__list navbar__item-cart">
+            <li class="item-cart__icon">
+              <a href="" class="navbar__item-link">
+                <i class="card__icon fas fa-shopping-cart"></i>
+              </a>
+              <a href="" class="navbar__item-link">
+                <span class="card__text">Cart</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid wide">
+        <div class="header__categories">
+          <ul class="header__categories-list">
+            <li class="header__categories-item header__categories-active">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">New in</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">Clothing</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">Shoes</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">Accessries</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">Skateboard</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">Route one</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">Brands</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">Launches</h2>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__categories-list">
+            <li class="header__categories-item">
+              <a href="" class="categories-item__link">
+                <h2 class="categories-item__name">Sale</h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="grid">
+        <div class="row banner__bg">
+          <div class="col l-6">
+            <div class="banner__text">
+              <span>New Season</span>
+            </div>
+            <div class="banner__heading">
+              <h2 class="banner__heading1">Route One O.B.</h2>
+              <h2 class="banner__heading2">Lastest Skateboard</h2>
+            </div>
+            <button class="banner__discover-btn">Discover</button>
+            <div class="banner__video">
+              <i class="banner__video-icon far fa-play-circle"></i>
+              <span class="banner__video-text">Watch video</span>
+            </div>
+            <ul class="banner__silder">
+              <li class="banner-slider__first slider--active">
+                <a class="slider__link" href=""></a>
+              </li>
+              <li class="banner-silder__second">
+                <a class="silder__link" href=""></a>
+              </li>
+              <li class="banner-silder__third">
+                <a class="silder__link" href=""></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col l-6">
+            <div class="banner__overlay">
+              <div class="banner__text-logo">
+                <span> cordes.</span>
+                <p>Skateboard</p>
+              </div>
+            </div>
+            <div class="banner__img">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid wide">
+      <div class="row brands">
+        <ul class="brands__list brands__list-start">
+          <li class="brands-item">
+            <a href="">
+              <svg width="83" height="60" viewBox="0 0 83 60" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="83" height="60" fill="url(#pattern0)" />
+                <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0" transform="translate(-0.0060241) scale(0.00722892 0.01)" />
+                  </pattern>
+                  <image id="image0" width="140" height="100"
+                    xlink:href="data:image/png;base64,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" />
+                </defs>
+              </svg>
+
+            </a>
+          </li>
+        </ul>
+        <ul class="brands__list">
+          <li class="brands-item">
+            <a href="">
+              <img src="./assets/img/banner/adidas.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="brands__list">
+          <li class="brands-item">
+            <a href="">
+              <img src="./assets/img/banner/routeone.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="brands__list">
+          <li class="brands-item">
+            <a href="">
+              <img src="./assets/img/banner/vans.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="brands__list">
+          <li class="brands-item">
+            <a href="">
+              <img src="./assets/img/banner/carhartt.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="brands__list">
+          <li class="brands-item">
+            <a href="">
+              <img src="./assets/img/banner/santacruz.png" alt="">
+            </a>
+          </li>
+        </ul>
+
+        <ul class="brands__list brands__list-end">
+          <li class="brands-item brands-item__text-logo">
+            <span class="brands-item__text">Explore Brands</span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="grid wide">
+        <div class="row fashion-trending">
+          <div class="fashion-trending__title">
+            <h1 class="fashion-trending__title-name">Fashion Trending</h1>
+          </div>
+          <div class="fashion-trending__content">
+            <div class="fashion-trending__overlay"></div>
+            <div class="fashion-trending__img-man"></div>
+            <div class="fashion-trending__img">
+              <div class="fashion-trending__img-hat"></div>
+              <div class="fashion-trending__img-shoes"></div>
+            </div>
+            <h1 class="fashion-trending__heading1">Drive or</h1>
+            <h1 class="fashion-trending__heading2">be Driven</h1>
+            <span class="fashion-trending__desc">Drive or be Driven, the new trending from Bobaj and Jackson
+              Davies...</span>
+            <button class="fashion-trending__btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="row new-season">
+          <ul class="new-season__silder">
+            <li class="new-season-slider__first slider-active">
+              <a class="silder-link" href=""></a>
+            </li>
+            <li class="new-season-silder__second">
+              <a class="silder-link" href=""></a>
+            </li>
+            <li class="new-season-silder__third">
+              <a class="silder-link" href=""></a>
+            </li>
+          </ul>
+          <div class="new-season__title">
+            <h1 class="new-season__title-name">New Season - Converse 'White Widow' Pack</h1>
+          </div>
+          <div class="new-season__img">
+            <img class="img__wear" src="./assets/img/new/paul-esch-laurent.png" alt="">
+            <div class="new-season__item-sale">
+              <img class="item-sale__avatar" src="./assets/img/new/shoes-red.png" alt="">
+              <span class="item-sale__info"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
