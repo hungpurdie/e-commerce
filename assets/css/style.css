@@ -541,7 +541,6 @@
   font-size: 2rem;
   line-height: 50px;
   margin-top: 120px;
-  position: relative;
 }
 
 .fashion-trending__title::before {
@@ -550,8 +549,8 @@
   height: 1px;
   width: 60px;
   background-color: var(--black-color);
-  top: 76%;
-  left: 49%;
+  top: 11%;
+  left: 26%;
   cursor: text;
 }
 
@@ -707,6 +706,8 @@
   position: relative;
 }
 
+/* .new-season__arrow {} */
+
 .season-arrow__left {
   position: absolute;
   top: 60%;
@@ -727,8 +728,7 @@
   right: 20%;
 }
 
-.right__circle {
-}
+/* .right__circle {} */
 
 .right__arrow {
   position: absolute;
@@ -752,24 +752,27 @@
 
 .sale-info__name div {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 17px;
   color: var(--black-color);
 }
 
 .sale-info__name span {
   font-weight: 800;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 17px;
 }
 
 .sale-info__price {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   line-height: 21px;
   font-weight: 800;
 }
 
 /* New Season Slider */
+.new-season {
+  position: relative;
+}
 
 .new-season__silder {
   display: inline-flex;
@@ -785,4 +788,5 @@
   border: 1px solid #b3c4d7;
   height: 2px;
   width: 40px;
+  height: 2px;
 }
