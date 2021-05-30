@@ -1,5 +1,6 @@
-Template: [STDIO Hue](https://stdiohue.com/)
+- Template: [STDIO Hue](https://stdiohue.com/)
 
 - [Link to review](https://stdiohue.netlify.app/)
 
--With the guidance of [Huy Nguyen]()
+- With the guidance of [Huy Nguyen]()
+Learn FE From Stdio.Hue
