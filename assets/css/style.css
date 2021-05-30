@@ -429,8 +429,8 @@
   height: 2px;
 }
 
-.slider--active {
-  border: 1px solid #ffffff;
+ul li.slider--active {
+  border: 1px solid #d4f5ff;
   width: 40px;
   height: 2px;
 }
@@ -657,6 +657,13 @@
 }
 
 /* New Season */
+.new-season {
+  position: relative;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
 
 .new-season__title {
   margin-top: 180px;
@@ -771,13 +778,13 @@
 }
 
 /* New Season Slider */
-.new-season {
-  position: relative;
-}
 
-.new-season__silder {
-  display: inline-flex;
+.new-season__slider {
+  display: flex;
   list-style-type: none;
+  position: absolute;
+  top: 0;
+  right: -150px;
 }
 
 .new-season__silder:hover {
@@ -786,7 +793,8 @@
 .new-season-slider__first,
 .new-season-slider__second,
 .new-season-slider__third {
-  border: 1px solid #b3c4d7;
+  border: 1px solid var(--white-color);
   height: 2px;
   width: 40px;
+  margin-left: 8px;
 }
