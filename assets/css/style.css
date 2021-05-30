@@ -525,6 +525,10 @@
 }
 
 /* Fashion Trending */
+.content {
+  background-color: #fbfbfb;
+}
+
 .fashion-trending {
   display: inline-block;
   position: relative;
@@ -537,6 +541,7 @@
   font-size: 2rem;
   line-height: 50px;
   margin-top: 120px;
+  position: relative;
 }
 
 .fashion-trending__title::before {
@@ -545,8 +550,8 @@
   height: 1px;
   width: 60px;
   background-color: var(--black-color);
-  top: 11%;
-  left: 26%;
+  top: 76%;
+  left: 49%;
   cursor: text;
 }
 
@@ -680,26 +685,94 @@
 
 .new-season__img {
   display: flex;
-  padding-top: 100px;
+  margin-top: 100px;
   position: relative;
 }
 
 .new-season__item-sale {
+  position: absolute;
+  top: 10%;
+  left: 95%;
+  z-index: 2;
 }
 
 .img__wear {
   background-color: #bacbf9;
+  z-index: 1;
 }
 
 .item-sale__avatar {
   background-color: #ffb7b7;
+  vertical-align: text-bottom;
+  position: relative;
+}
 
-  top: 0%;
+.season-arrow__left {
+  position: absolute;
+  top: 60%;
+  right: 20%;
+}
+
+.left__arrow {
+  position: absolute;
+  top: 18px;
+  left: 23px;
+}
+
+/* .left__circle {} */
+
+.season-arrow__right {
+  position: absolute;
+  top: 75%;
+  right: 20%;
+}
+
+.right__circle {
+}
+
+.right__arrow {
+  position: absolute;
+  top: 18px;
+  left: 25px;
+}
+
+.item-sale__info {
+  width: 100%;
+  height: 61px;
+  background-color: #fff;
+  padding: 2rem 6rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale-info__name {
+  font-family: var(--Lexend-font);
+}
+
+.sale-info__name div {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: var(--black-color);
+}
+
+.sale-info__name span {
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.sale-info__price {
+  font-size: 1.9rem;
+  line-height: 21px;
+  font-weight: 800;
 }
 
 /* New Season Slider */
+
 .new-season__silder {
-  display: flex;
+  display: inline-flex;
   list-style-type: none;
 }
 
@@ -712,5 +785,4 @@
   border: 1px solid #b3c4d7;
   height: 2px;
   width: 40px;
-  height: 2px;
 }
