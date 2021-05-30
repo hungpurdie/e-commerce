@@ -206,7 +206,7 @@
   position: absolute;
   width: 54px;
   height: 18px;
-  left: 1012px;
+  left: 998px;
   top: 65px;
   font-size: 14px;
 }
@@ -220,10 +220,9 @@
   list-style: none;
 }
 
-/* Navbar Favourite */
-.navbar__item-favourite {
+/* Navbar Favorite */
+.navbar__item-favorite {
   display: inline-flex;
-  text-align: center;
 }
 
 .favourite__icon {
@@ -232,7 +231,7 @@
   font-size: 1.9rem;
 }
 
-.favourite__text,
+.favorite__text,
 .cart__text {
   width: 50px;
   font-size: 1.4rem;
@@ -240,18 +239,20 @@
   font-family: var(--Lexend-font);
 }
 
-/* Navbar Card */
+/* Navbar Cart */
 
 .navbar__item-cart {
+  display: inline-flex;
   margin-right: 20px;
 }
 
-.card__icon {
+.cart__icon {
   color: #1a1a1a;
   font-size: 1.9rem;
+  margin-right: 20px;
 }
 
-.card__text {
+.cart__text {
   width: 50px;
   font-size: 1.4rem;
   line-height: 1.7rem;
@@ -297,7 +298,7 @@
   content: "";
   position: absolute;
   top: 20px;
-  right: 23px;
+  right: 24px;
   width: 43px;
   border: 1px solid var(--black-color);
   cursor: text;
@@ -360,13 +361,13 @@
   height: 73px;
 }
 
-.banner__heading1 {
+.banner__heading-first {
   margin-left: 75px;
   margin-top: 20px;
   font-weight: 600;
 }
 
-.banner__heading2 {
+.banner__heading-second {
   margin-left: 165px;
   margin-top: 13px;
   font-weight: 600;
@@ -656,8 +657,8 @@ ul li.slider--active {
   margin-top: 106px;
 }
 
-/* New Season */
-.new-season {
+/* New Season First */
+.new-season-first {
   position: relative;
   flex-direction: column;
   align-content: flex-start;
@@ -665,12 +666,12 @@ ul li.slider--active {
   align-items: flex-start;
 }
 
-.new-season__title {
+.new-season-first__title {
   margin-top: 180px;
   color: var(--black-color);
 }
 
-.new-season__title-name {
+.new-season-first__title-name {
   font-family: Lexend;
   font-style: normal;
   font-weight: 600;
@@ -679,7 +680,7 @@ ul li.slider--active {
   position: relative;
 }
 
-.new-season__title-name::after {
+.new-season-first__title-name::after {
   position: absolute;
   content: "";
   height: 1px;
@@ -690,13 +691,13 @@ ul li.slider--active {
   cursor: text;
 }
 
-.new-season__img {
+.new-season-first__img {
   display: flex;
   margin-top: 100px;
   position: relative;
 }
 
-.new-season__item-sale {
+.new-season-first__item-sale {
   position: absolute;
   top: 10%;
   left: 95%;
@@ -714,7 +715,7 @@ ul li.slider--active {
   position: relative;
 }
 
-/* .new-season__arrow {} */
+/* .new-season-first__arrow {} */
 
 .season-arrow__left {
   position: absolute;
@@ -752,6 +753,7 @@ ul li.slider--active {
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
+  box-shadow: 1px 1px 1px rgba(196, 196, 196, 0.7);
 }
 
 .sale-info__name {
@@ -779,7 +781,7 @@ ul li.slider--active {
 
 /* New Season Slider */
 
-.new-season__slider {
+.new-season-first__slider {
   display: flex;
   list-style-type: none;
   position: absolute;
@@ -787,14 +789,239 @@ ul li.slider--active {
   right: -150px;
 }
 
-.new-season__silder:hover {
+.new-season-first__slider:hover {
   cursor: pointer;
 }
-.new-season-slider__first,
-.new-season-slider__second,
-.new-season-slider__third {
+.new-season-first-slider__first,
+.new-season-first-slider__second,
+.new-season-first-slider__third {
   border: 1px solid var(--white-color);
   height: 2px;
   width: 40px;
   margin-left: 8px;
+}
+
+/* New Season Second */
+.new-season-second {
+  margin-top: 180px;
+  height: 560px;
+  background-color: #dce6ff;
+}
+
+.new-season-second__title {
+  font-family: var(--Lexend-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.new-season-second__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: var(--black-color);
+  top: 1.2rem;
+  left: 23%;
+  cursor: text;
+}
+
+.new-season-second__heading {
+  margin-top: 16px;
+  font-family: var(--Lexend-font);
+  font-size: 27px;
+  line-height: 60px;
+}
+
+.second-heading__first {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.second-heading__second {
+  font-weight: 600;
+}
+
+.new-season-second__desc {
+  margin-top: 24px;
+  font-size: 1.4rem;
+  max-width: 280px;
+}
+
+.new-season-second__btn {
+  margin-top: 92px;
+  min-width: 121px;
+  height: 38px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-family: var(--Lexend-font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* New Season Second Image */
+.new-season-second__img {
+  margin-bottom: 128px;
+}
+
+.new-season-second__img-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.new-season-second__img-1 {
+  background-image: url(../img/route-one/1.png);
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 360px;
+}
+
+.new-season-second__img-2 {
+  background-image: url(../img/route-one/2.png);
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 360px;
+}
+
+.new-season-second__img-3 {
+  background-image: url(../img/route-one/3.png);
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 360px;
+}
+
+.new-season-second__img-4 {
+  background-image: url(../img/route-one/4.png);
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 360px;
+}
+
+.new-season-second__img-5 {
+  background-image: url(../img/route-one/5.png);
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 350px;
+}
+
+/* New Releases */
+.new-releases {
+  height: 700px;
+  margin-top: 180px;
+  background-color: #fbfbfb;
+}
+
+.new-releases-title {
+  display: block;
+  font-family: var(--Lexend-font);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 50px;
+  position: relative;
+}
+
+.new-releases-title::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 105%;
+  width: 60px;
+  height: 1px;
+  background-color: var(--black-color);
+}
+
+/* New Releases List item*/
+.new-releases__content {
+  margin-top: 100px;
+}
+
+.new-releases__list {
+  list-style-type: none;
+}
+
+.releases-list__item {
+  font-family: var(--Lexend-font);
+  color: var(--black-color);
+}
+
+.releases-list__item-link:hover {
+  cursor: pointer;
+}
+
+.releases-list__item-img {
+  display: block;
+  background-image: url(../img/new-release/1.png);
+  width: 280px;
+  height: 285px;
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--white-color);
+  position: relative;
+}
+
+.releases-list__item-img:hover {
+  cursor: pointer;
+}
+
+.item__favorite {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.item__favorite:hover {
+  cursor: pointer;
+}
+
+.item__favorite--active svg {
+  fill: red;
+}
+
+.releases-list__item-name {
+  font-size: 15px;
+  line-height: 17px;
+  color: var(--black-color);
+  margin-left: 10px;
+}
+
+.releases-list__item-sell {
+  width: 280px;
+  height: 97px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px rgba(196, 196, 196, 0.7);
+  padding-top: 20px;
+}
+
+.item-sell__info {
+  margin-top: 20px;
+  width: 100%;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.sell-info__price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  margin-left: 10px;
+}
+
+.sell-info__quantity {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-right: 10px;
 }
