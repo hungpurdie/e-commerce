@@ -152,10 +152,9 @@
 }
 
 .search-bar__input input::placeholder {
-  color: var(--gray-color);
-  font: var(--Lexend-font);
   font-size: 1.4rem;
   padding-left: 10px;
+  font-family: var(--Lexend-font);
   line-height: 17rem;
 }
 
