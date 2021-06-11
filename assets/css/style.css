@@ -610,24 +610,24 @@ ul li.slider--active {
   flex-wrap: wrap;
 }
 
-.fashion-trending__heading1 {
-  font-family: var(--Lexend-font);
-  font-weight: 600;
-  font-size: 120px;
-  line-height: 150px;
+.fashion-trending__heading {
+  line-height: 120px;
   margin-left: -20px;
+  font-family: var(--Lexend-font);
   z-index: 2;
 }
 
-.fashion-trending__heading2 {
-  font-family: var(--Lexend-font);
+.fashion-trending__heading1 {
   font-weight: 600;
-  font-size: 120px;
-  line-height: 150px;
-  color: #fff;
-  text-shadow: 0px 0px 5px #000;
+  font-size: 100px;
+}
+
+.fashion-trending__heading2 {
+  font-size: 100px;
+  color: var(--white-color);
   margin-left: 178px;
   margin-top: -20px;
+  text-shadow: 0px 0px 5px #000;
   z-index: 5;
 }
 
@@ -639,7 +639,8 @@ ul li.slider--active {
   font-size: 14px;
   line-height: 17px;
   margin-left: 178px;
-  margin-top: -10px;
+  margin-top: 10px;
+  z-index: 2;
 }
 
 .fashion-trending__btn {
@@ -917,8 +918,7 @@ ul li.slider--active {
 
 /* New Releases */
 .new-releases {
-  height: 700px;
-  margin-top: 180px;
+  padding: 180px 0;
   background-color: #fbfbfb;
 }
 
@@ -942,12 +942,13 @@ ul li.slider--active {
 }
 
 /* New Releases List item*/
-.new-releases__content {
-  margin-top: 100px;
-}
 
 .new-releases__list {
   list-style-type: none;
+  width: 342px;
+  height: 382px;
+  margin-top: 80px;
+  cursor: text;
 }
 
 .releases-list__item {
@@ -962,9 +963,10 @@ ul li.slider--active {
 .releases-list__item-img {
   display: block;
   background-image: url(../img/new-release/1.png);
-  width: 280px;
+  width: 342px;
   height: 285px;
-  background-size: cover;
+  background-size: 80%;
+  background-repeat: no-repeat;
   background-position: center center;
   background-color: var(--white-color);
   position: relative;
@@ -996,7 +998,7 @@ ul li.slider--active {
 }
 
 .releases-list__item-sell {
-  width: 280px;
+  width: 342px;
   height: 97px;
   background-color: #fff;
   box-shadow: 1px 1px 1px rgba(196, 196, 196, 0.7);
@@ -1024,4 +1026,8 @@ ul li.slider--active {
   font-size: 12px;
   line-height: 15px;
   margin-right: 10px;
+}
+/* Season into sass*/
+.a {
+  background-color: orange;
 }

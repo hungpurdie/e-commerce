@@ -13,11 +13,12 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/sass/season.css">
   <title>Document</title>
 </head>
 
 <body>
-  <div class="app">
+  <div class="root">
     <header class="header">
       <div class="grid header__info-store">
         <div class="grid wide">
@@ -335,8 +336,12 @@
               <div class="fashion-trending__img-hat"></div>
               <div class="fashion-trending__img-shoes"></div>
             </div>
-            <h1 class="fashion-trending__heading1">Drive or</h1>
-            <h1 class="fashion-trending__heading2">be Driven</h1>
+            <div class="fashion-trending__heading">
+              <h1 class="fashion-trending__heading1">Drive or</h1>
+              <h1 class="fashion-trending__heading2">be Driven</h1>
+            </div>
+
+
             <span class="fashion-trending__desc">Drive or be Driven, the new trending from Bobaj and Jackson
               Davies...</span>
             <button class="fashion-trending__btn">Shop Now</button>
@@ -442,14 +447,97 @@
       </div>
     </section>
 
-    <div class="grid new-releases">
+    <div class="new-releases">
       <div class="grid wide">
         <div class="row">
           <div class="new-releases-title">
             <h1>New Releases</h1>
           </div>
         </div>
-        <div class="row new-releases__content">
+        <section class="row new-releases__content">
+          <ul class="col l-3 new-releases__list">
+            <div class="releases-list__item">
+              <div class="releases-list__item-img">
+                <a class="item__favorite item__favorite--active">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.5775 18.7579L19.3938 10.3861C21.3144 8.3291 21.5977 4.94497 19.7802 2.78319C19.325 2.24014 18.7712 1.80212 18.1527 1.49587C17.5341 1.18962 16.8638 1.02156 16.1827 1.00194C15.5015 0.982322 14.8237 1.11156 14.1907 1.38176C13.5577 1.65196 12.9828 2.05747 12.5009 2.57353L11.0318 4.14705L9.76338 2.78847C7.84283 0.731439 4.68323 0.427956 2.66488 2.37461C2.15785 2.86221 1.7489 3.45535 1.46297 4.11782C1.17704 4.7803 1.02013 5.49823 1.00181 6.22781C0.983495 6.95739 1.10415 7.68331 1.35643 8.36129C1.6087 9.03927 1.98731 9.65509 2.46913 10.1712L10.4862 18.7579C10.6309 18.9129 10.8272 19 11.0318 19C11.2365 19 11.4328 18.9129 11.5775 18.7579V18.7579Z"
+                      stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="releases-list__item-sell">
+                <div class="releases-list__item-name">Globe Sabre Skate Shoes - Black...</div>
+                <div class="item-sell__info">
+                  <span class="sell-info__price">£84.99</span>
+                  <span class="sell-info__quantity">1114 sold</span>
+                </div>
+              </div>
+            </div>
+          </ul>
+
+          <ul class="col l-3 new-releases__list">
+            <div class="releases-list__item">
+              <div class="releases-list__item-img">
+                <a class="item__favorite ">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.5775 18.7579L19.3938 10.3861C21.3144 8.3291 21.5977 4.94497 19.7802 2.78319C19.325 2.24014 18.7712 1.80212 18.1527 1.49587C17.5341 1.18962 16.8638 1.02156 16.1827 1.00194C15.5015 0.982322 14.8237 1.11156 14.1907 1.38176C13.5577 1.65196 12.9828 2.05747 12.5009 2.57353L11.0318 4.14705L9.76338 2.78847C7.84283 0.731439 4.68323 0.427956 2.66488 2.37461C2.15785 2.86221 1.7489 3.45535 1.46297 4.11782C1.17704 4.7803 1.02013 5.49823 1.00181 6.22781C0.983495 6.95739 1.10415 7.68331 1.35643 8.36129C1.6087 9.03927 1.98731 9.65509 2.46913 10.1712L10.4862 18.7579C10.6309 18.9129 10.8272 19 11.0318 19C11.2365 19 11.4328 18.9129 11.5775 18.7579V18.7579Z"
+                      stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="releases-list__item-sell">
+                <div class="releases-list__item-name">Globe Sabre Skate Shoes - Black...</div>
+                <div class="item-sell__info">
+                  <span class="sell-info__price">£84.99</span>
+                  <span class="sell-info__quantity">1114 sold</span>
+                </div>
+              </div>
+            </div>
+          </ul>
+
+          <ul class="col l-3 new-releases__list">
+            <div class="releases-list__item">
+              <div class="releases-list__item-img">
+                <a class="item__favorite ">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.5775 18.7579L19.3938 10.3861C21.3144 8.3291 21.5977 4.94497 19.7802 2.78319C19.325 2.24014 18.7712 1.80212 18.1527 1.49587C17.5341 1.18962 16.8638 1.02156 16.1827 1.00194C15.5015 0.982322 14.8237 1.11156 14.1907 1.38176C13.5577 1.65196 12.9828 2.05747 12.5009 2.57353L11.0318 4.14705L9.76338 2.78847C7.84283 0.731439 4.68323 0.427956 2.66488 2.37461C2.15785 2.86221 1.7489 3.45535 1.46297 4.11782C1.17704 4.7803 1.02013 5.49823 1.00181 6.22781C0.983495 6.95739 1.10415 7.68331 1.35643 8.36129C1.6087 9.03927 1.98731 9.65509 2.46913 10.1712L10.4862 18.7579C10.6309 18.9129 10.8272 19 11.0318 19C11.2365 19 11.4328 18.9129 11.5775 18.7579V18.7579Z"
+                      stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="releases-list__item-sell">
+                <div class="releases-list__item-name">Globe Sabre Skate Shoes - Black...</div>
+                <div class="item-sell__info">
+                  <span class="sell-info__price">£84.99</span>
+                  <span class="sell-info__quantity">1114 sold</span>
+                </div>
+              </div>
+            </div>
+          </ul>
+
+          <ul class="col l-3 new-releases__list">
+            <div class="releases-list__item">
+              <div class="releases-list__item-img">
+                <a class="item__favorite ">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.5775 18.7579L19.3938 10.3861C21.3144 8.3291 21.5977 4.94497 19.7802 2.78319C19.325 2.24014 18.7712 1.80212 18.1527 1.49587C17.5341 1.18962 16.8638 1.02156 16.1827 1.00194C15.5015 0.982322 14.8237 1.11156 14.1907 1.38176C13.5577 1.65196 12.9828 2.05747 12.5009 2.57353L11.0318 4.14705L9.76338 2.78847C7.84283 0.731439 4.68323 0.427956 2.66488 2.37461C2.15785 2.86221 1.7489 3.45535 1.46297 4.11782C1.17704 4.7803 1.02013 5.49823 1.00181 6.22781C0.983495 6.95739 1.10415 7.68331 1.35643 8.36129C1.6087 9.03927 1.98731 9.65509 2.46913 10.1712L10.4862 18.7579C10.6309 18.9129 10.8272 19 11.0318 19C11.2365 19 11.4328 18.9129 11.5775 18.7579V18.7579Z"
+                      stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="releases-list__item-sell">
+                <div class="releases-list__item-name">Globe Sabre Skate Shoes - Black...</div>
+                <div class="item-sell__info">
+                  <span class="sell-info__price">£84.99</span>
+                  <span class="sell-info__quantity">1114 sold</span>
+                </div>
+              </div>
+            </div>
+          </ul>
 
           <ul class="col l-3 new-releases__list">
             <div class="releases-list__item">
@@ -471,26 +559,6 @@
               </div>
             </div>
           </ul>
-          <ul class="col l-3 new-releases__list">
-            <div class="releases-list__item">
-              <div class="releases-list__item-img">
-                <a class="item__favorite ">
-                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M11.5775 18.7579L19.3938 10.3861C21.3144 8.3291 21.5977 4.94497 19.7802 2.78319C19.325 2.24014 18.7712 1.80212 18.1527 1.49587C17.5341 1.18962 16.8638 1.02156 16.1827 1.00194C15.5015 0.982322 14.8237 1.11156 14.1907 1.38176C13.5577 1.65196 12.9828 2.05747 12.5009 2.57353L11.0318 4.14705L9.76338 2.78847C7.84283 0.731439 4.68323 0.427956 2.66488 2.37461C2.15785 2.86221 1.7489 3.45535 1.46297 4.11782C1.17704 4.7803 1.02013 5.49823 1.00181 6.22781C0.983495 6.95739 1.10415 7.68331 1.35643 8.36129C1.6087 9.03927 1.98731 9.65509 2.46913 10.1712L10.4862 18.7579C10.6309 18.9129 10.8272 19 11.0318 19C11.2365 19 11.4328 18.9129 11.5775 18.7579V18.7579Z"
-                      stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
-              </div>
-              <div class="releases-list__item-sell">
-                <div class="releases-list__item-name">Globe Sabre Skate Shoes - Black...</div>
-                <div class="item-sell__info">
-                  <span class="sell-info__price">£84.99</span>
-                  <span class="sell-info__quantity">1114 sold</span>
-                </div>
-              </div>
-            </div>
-          </ul>
 
           <ul class="col l-3 new-releases__list">
             <div class="releases-list__item">
@@ -534,17 +602,95 @@
             </div>
           </ul>
 
-
-
-
-
-        </div>
+          <ul class="col l-3 new-releases__list">
+            <div class="releases-list__item">
+              <div class="releases-list__item-img">
+                <a class="item__favorite ">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.5775 18.7579L19.3938 10.3861C21.3144 8.3291 21.5977 4.94497 19.7802 2.78319C19.325 2.24014 18.7712 1.80212 18.1527 1.49587C17.5341 1.18962 16.8638 1.02156 16.1827 1.00194C15.5015 0.982322 14.8237 1.11156 14.1907 1.38176C13.5577 1.65196 12.9828 2.05747 12.5009 2.57353L11.0318 4.14705L9.76338 2.78847C7.84283 0.731439 4.68323 0.427956 2.66488 2.37461C2.15785 2.86221 1.7489 3.45535 1.46297 4.11782C1.17704 4.7803 1.02013 5.49823 1.00181 6.22781C0.983495 6.95739 1.10415 7.68331 1.35643 8.36129C1.6087 9.03927 1.98731 9.65509 2.46913 10.1712L10.4862 18.7579C10.6309 18.9129 10.8272 19 11.0318 19C11.2365 19 11.4328 18.9129 11.5775 18.7579V18.7579Z"
+                      stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="releases-list__item-sell">
+                <div class="releases-list__item-name">Globe Sabre Skate Shoes - Black...</div>
+                <div class="item-sell__info">
+                  <span class="sell-info__price">£84.99</span>
+                  <span class="sell-info__quantity">1114 sold</span>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </section>
       </div>
     </div>
 
+    <div class="grid wide">
+      <div class="row season">
+        <div class="col l-6 season__box-first season__box-flex">
+          <div class="box-first__content">
+            <span class="first-content__title">New Season</span>
+            <div class="first-content__heading">
+              <h1 class="first-content__heading1">Welcome</h1>
+              <h1 class="first-content__heading2">Hoddies</h1>
+            </div>
+            <button class="btn btn--white">Discover</button>
+          </div>
+          <div class="box-first__img"></div>
+        </div>
+
+        <div class="col l-6 season__box-second season__box-flex">
+          <div class="box-second__content ">
+            <span class="second-content__title">Latest</span>
+            <div class="second-content__heading">
+              <h1 class="second-content__heading1">Santa</h1>
+              <h1 class="second-content__heading2">Cruz</h1>
+            </div>
+            <button class="btn btn--white">Discover</button>
+          </div>
+          <div class="box-second__img"></div>
+        </div>
+
+        <div class="col l-6 season__box-flex">
+          <div class="season-box__video">
+            <a href="" class="box-video__link">
+              <div class="box-video__icon">
+                <svg class="icon__circle" width="98" height="97" viewBox="0 0 98 97" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M49.3355 5.70588C25.7665 5.70588 6.66004 24.8655 6.66004 48.5C6.66004 72.1345 25.7665 91.2941 49.3355 91.2941C72.9045 91.2941 92.011 72.1345 92.011 48.5C92.011 24.8655 72.9045 5.70588 49.3355 5.70588ZM0.969971 48.5C0.969971 21.7142 22.624 0 49.3355 0C76.0471 0 97.7011 21.7142 97.7011 48.5C97.7011 75.2858 76.0471 97 49.3355 97C22.624 97 0.969971 75.2858 0.969971 48.5Z"
+                    fill="white" />
+                </svg>
+                <svg class="icon__rectangle" width="30" height="37" viewBox="0 0 30 37" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.40627 0.768732C3.33135 0.272266 4.45385 0.326679 5.32686 0.910307L28.0871 16.126C28.8786 16.6551 29.354 17.5459 29.354 18.4998C29.354 19.4536 28.8786 20.3444 28.0871 20.8735L5.32686 36.0892C4.45385 36.6728 3.33135 36.7272 2.40627 36.2308C1.48118 35.7343 0.903687 34.7676 0.903687 33.7154V3.28409C0.903687 2.23194 1.48118 1.2652 2.40627 0.768732ZM6.59376 8.61485V28.3847L21.38 18.4998L6.59376 8.61485Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col l-6 season__box-flex season-box__text">
+          <div class="box-text__heading">
+            <h1 class="text__heading1">Cookie</h1>
+            <h1 class="text__heading2">'Light of Mine'</h1>
+          </div>
+          <span class="box-text__desc">
+            Remember when Chris 'Cookie' Colbourn mixed amazing Cobra Man cameos in his Heatwave part? You ought to,
+            it
+            was only
+            seven months ago! Well, he's back again (sans Cobra Man sadly) and this time the "gimmick" is it's all
+            filmed...
+          </span>
+          <button class="btn btn--black">Discover</button>
+        </div>
+      </div>
 
 
-  </div>
+    </div>
 </body>
 
 </html>

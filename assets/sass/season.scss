@@ -1,0 +1,237 @@
+.season {
+  $width-season: 580px;
+  $height-season: 418px;
+  $black-color: #1a1a1a;
+  
+
+  .season__box-flex {
+    width: 712px;
+    height: 418px;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 47%;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .btn {
+    font-family: var(--Lexend-font);
+    font-size: 14px;
+    line-height: 17px;
+    min-width: 121px;
+    height: 38px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  &__box-first {
+    padding: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(96, 136, 130, 1) 0%,
+      rgba(143, 233, 233, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    .box-first__content {
+      margin-left: 100px;
+      margin-top: 80px;
+      font-family: var(--Lexend-font);
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      color: var(--white-color);
+
+      .first-content__title {
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+      }
+
+      .first-content__title::after {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 1px;
+        top: 1.3rem;
+        left: 95px;
+        cursor: text;
+        background-color: var(--white-color);
+      }
+
+      .first-content__heading {
+        margin-top: 8px;
+        font-weight: 600;
+      }
+
+      .first-content__heading1 {
+        line-height: 65px;
+        font-size: 52px;
+        margin-bottom: 8px;
+      }
+
+      .first-content__heading2 {
+        margin-left: 100px;
+        line-height: 65px;
+        font-size: 52px;
+      }
+    }
+
+    .btn--white {
+      background-color: var(--white-color);
+      color: var(--black-color);
+      margin-top: 5.6rem;
+    }
+
+    .box-first__img {
+      background-image: url(../img/season/1.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: $width-season;
+      height: $height-season;
+    }
+  }
+
+  &__box-second {
+    position: relative;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(46, 86, 99, 1) 0%,
+      rgba(143, 233, 233, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    .box-second__content {
+      margin-left: 100px;
+      margin-top: 80px;
+      font-family: var(--Lexend-font);
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      color: var(--white-color);
+
+      .second-content__title {
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+      }
+
+      .second-content__title::after {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 1px;
+        top: 12px;
+        left: 55px;
+        cursor: text;
+        background-color: var(--white-color);
+      }
+
+      .second-content__heading {
+        margin-top: 8px;
+        font-weight: 600;
+      }
+
+      .second-content__heading1 {
+        line-height: 65px;
+        font-size: 52px;
+        margin-bottom: 8px;
+      }
+
+      .second-content__heading2 {
+        margin-left: 100px;
+        line-height: 65px;
+        font-size: 52px;
+      }
+    }
+
+    .btn--white {
+      background-color: var(--white-color);
+      color: var(--black-color);
+      margin-top: 5.6rem;
+    }
+
+    .box-second__img {
+      background-image: url(../img/season/2.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: $width-season;
+      height: $height-season;
+    }
+  }
+
+  .season-box__video {
+    background-image: url(../img/season/3.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 712px;
+    height: $height-season;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box-video__link:hover {
+      cursor: pointer;
+    }
+
+    .box-video__icon {
+      color: var(--white-color);
+      justify-content: center;
+      position: relative;
+
+      .icon__rectangle {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+      }
+    }
+  }
+
+  .season-box__text {
+    .box-text__heading {
+      font-family: var(--Lexend-font);
+      font-style: normal;
+      font-weight: 600;
+      margin-top: 60px;
+      margin-left: 120px;
+      color: $black-color;
+
+      .text__heading1 {
+        font-size: 52px;
+        line-height: 65px;
+      }
+
+      .text__heading2 {
+        font-size: 52px;
+        line-height: 65px;
+      }
+    }
+
+    .box-text__desc {
+      font-family: var(--Lexend-font);
+      display: block;
+      margin-top: 24px;
+      margin-left: 120px;
+      max-width: 377px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .btn--black {
+      margin-left: 120px;
+      background-color: var(--black-color);
+      color: var(--white-color);
+      margin-top: 5.6rem;
+    }
+  }
+}
